@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b6b54">
+<title>Eco Hero Mission | ภารกิจพิทักษ์โลก</title>
+<style>
+:root{--green:#087f5b;--deep:#064e3b;--lime:#d9f99d;--sky:#e0f2fe;--ink:#17352c;--muted:#60756d;--paper:#fff;--bg:#f1f8f2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 5%,#d9f99d 0,transparent 24%),linear-gradient(135deg,#effcf4,#eaf6ff 55%,#f7fee7);min-height:100vh}
+.wrap{width:min(1080px,92%);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.brand{font-weight:900;letter-spacing:.3px;color:var(--deep);display:flex;gap:10px;align-items:center}.brand-icon{width:42px;height:42px;border-radius:14px;background:var(--deep);color:white;display:grid;place-items:center;font-size:23px}.tag{background:#dcfce7;color:#166534;border:1px solid #bbf7d0;padding:8px 14px;border-radius:99px;font-size:13px;font-weight:800}
+.hero{position:relative;overflow:hidden;border-radius:30px;padding:clamp(26px,6vw,64px);background:linear-gradient(120deg,#064e3b,#087f5b 58%,#16a36f);color:white;box-shadow:0 24px 60px #064e3b25}
+.hero:after{content:"🌍";position:absolute;right:5%;top:8%;font-size:clamp(90px,17vw,180px);opacity:.16;transform:rotate(-14deg)}
+.kicker{font-size:13px;font-weight:900;letter-spacing:2px;color:#d9f99d}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.08;margin:14px 0 12px;max-width:700px}.hero p{font-size:clamp(15px,2vw,18px);line-height:1.8;color:#e7fff2;max-width:650px;margin:0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;position:relative;z-index:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;border:0;border-radius:14px;padding:14px 22px;font-weight:900;font-size:15px;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:#d9f99d;color:#164e35;box-shadow:0 8px 20px #022c2230}.secondary{background:#ffffff1b;color:white;border:1px solid #ffffff55}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}.stat{background:#ffffffc9;border:1px solid #ffffff;border-radius:18px;padding:16px;text-align:center;box-shadow:0 8px 25px #164e3510}.stat strong{display:block;font-size:23px;color:var(--deep)}.stat span{font-size:12px;color:var(--muted);font-weight:700}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:38px 0 16px}.section-title h2{margin:0;font-size:clamp(22px,3vw,30px);color:var(--deep)}.section-title p{margin:0;color:var(--muted);font-size:13px}
+.missions{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.mission{background:#fff;border:1px solid #e1eee4;border-radius:22px;padding:22px;box-shadow:0 10px 28px #164e350b}.num{width:42px;height:42px;border-radius:14px;background:#dcfce7;display:grid;place-items:center;font-size:20px;margin-bottom:13px}.mission h3{margin:0 0 8px;color:var(--deep);font-size:17px}.mission p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.tip{margin:20px 0;background:#fffbeb;border:1px solid #fde68a;border-radius:18px;padding:17px 20px;display:flex;gap:13px;align-items:flex-start}.tip b{color:#92400e}.tip p{margin:3px 0 0;color:#785b22;font-size:14px;line-height:1.65}
+.form-shell{margin:26px 0 50px;background:white;border:1px solid #dcebe0;border-radius:24px;overflow:hidden;box-shadow:0 18px 50px #164e3512}.form-head{padding:22px 25px;background:linear-gradient(90deg,#ecfdf5,#eff6ff);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.form-head h2{margin:0;color:var(--deep);font-size:22px}.form-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.live{font-size:12px;font-weight:900;color:#166534;background:#dcfce7;border-radius:99px;padding:8px 12px}.frame-wrap{background:#f8fbf9;padding:10px}.frame-wrap iframe{display:block;width:100%;height:2200px;border:0;border-radius:12px;background:white}
+footer{text-align:center;padding:0 0 34px;color:#6b8177;font-size:12px;line-height:1.7}
+@media(max-width:760px){.missions{grid-template-columns:1fr}.stats{gap:8px}.stat{padding:12px 6px}.stat strong{font-size:19px}.stat span{font-size:11px}.top{padding:14px 0}.tag{font-size:11px}.form-head{padding:18px}.frame-wrap{padding:0}.frame-wrap iframe{height:2450px;border-radius:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="brand"><span class="brand-icon">🌱</span> ECO HERO CLASSROOM</div>
+  <span class="tag">ใบงานออนไลน์ • วิทยาการ/เทคโนโลยี</span>
+</header>
+<main>
+<section class="hero">
+  <div class="kicker">SPECIAL MISSION • ระดับชั้นมัธยมศึกษาปีที่ 3</div>
+  <h1>ภารกิจพิทักษ์โลก<br>ด้วยพลังเทคโนโลยี 🌎</h1>
+  <p>โลกกำลังเผชิญปัญหาสิ่งแวดล้อม! ถึงเวลาที่ฮีโร่รุ่นใหม่จะออกสำรวจ ค้นหาเทคโนโลยี และวิเคราะห์ว่าเราจะใช้สิ่งประดิษฐ์ต่าง ๆ ช่วยโลกของเราได้อย่างไร</p>
+  <div class="hero-actions">
+    <a class="btn primary" href="#worksheet">🚀 เริ่มทำภารกิจ</a>
+    <a class="btn secondary" href="#missions">📋 ดูรายละเอียดภารกิจ</a>
+  </div>
+</section>
+<section class="stats" aria-label="ข้อมูลใบงาน">
+  <div class="stat"><strong>3 ด่าน</strong><span>ภารกิจนักพิทักษ์โลก</span></div>
+  <div class="stat"><strong>ม.3</strong><span>ระดับชั้น</span></div>
+  <div class="stat"><strong>1 เป้าหมาย</strong><span>ใช้เทคโนโลยีช่วยโลก</span></div>
+</section>
+<div class="section-title" id="missions">
+  <div><h2>🧭 แผนที่ภารกิจ</h2><p>อ่านโจทย์แต่ละด่านก่อนเริ่มตอบ</p></div>
+  <span class="tag">MISSION 01–03</span>
+</div>
+<section class="missions">
+  <article class="mission"><div class="num">🔎</div><h3>ด่านที่ 1 : นักสำรวจเทคโนโลยี</h3><p>ค้นหาและระบุเทคโนโลยีที่มนุษย์นำมาใช้แก้ไขปัญหาสิ่งแวดล้อม พร้อมอธิบายว่าเทคโนโลยีนั้นช่วยอะไร</p></article>
+  <article class="mission"><div class="num">🧠</div><h3>ด่านที่ 2 : นักวิเคราะห์ปัญหา</h3><p>วิเคราะห์สาเหตุของปัญหาสิ่งแวดล้อม และพิจารณาปัญหาหรือข้อจำกัดที่อาจเกิดขึ้นหลังนำเทคโนโลยีมาใช้</p></article>
+  <article class="mission"><div class="num">⚖️</div><h3>ด่านที่ 3 : ผู้พิทักษ์โลก</h3><p>ประเมินข้อดีและข้อเสียของเทคโนโลยีที่เลือก ทั้งต่อชีวิตประจำวัน สังคม และสิ่งแวดล้อม</p></article>
+</section>
+<div class="tip"><div style="font-size:25px">💡</div><div><b>เคล็ดลับฮีโร่</b><p>เลือกเทคโนโลยีที่มีข้อมูลให้ค้นคว้าได้จริง เช่น รถยนต์ไฟฟ้า แผงโซลาร์เซลล์ เครื่องคัดแยกขยะ ระบบบำบัดน้ำเสีย หรือพลังงานลม แล้วตอบด้วยภาษาของตนเอง พร้อมยกตัวอย่างให้ชัดเจน</p></div></div>
+<section id="worksheet" class="form-shell">
+  <div class="form-head">
+    <div><h2>📝 ห้องปฏิบัติการส่งภารกิจ</h2><p>กรอกข้อมูลนักเรียนและตอบคำถามให้ครบก่อนกดส่ง</p></div>
+    <span class="live">● แบบฟอร์ม Google Forms</span>
+  </div>
+  <div class="frame-wrap">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSceZq7XmMfzpZQYau24HA8NCv3lbSLQr1WjqYCYv8mR1ge5WA/viewform?embedded=true" title="ใบงานที่ 1.1 เทคโนโลยีอนุรักษ์สิ่งแวดล้อม" loading="lazy">กำลังโหลดใบงาน…</iframe>
+  </div>
+</section>
+</main>
+<footer>🌿 ทุกคำตอบของคุณ คืออีกหนึ่งไอเดียในการดูแลโลก<br>Eco Hero Mission • ใบงานที่ 1.1 เรื่อง เทคโนโลยีอนุรักษ์สิ่งแวดล้อม</footer>
+</div>
+</body>
+</html>
